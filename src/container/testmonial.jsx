@@ -10,7 +10,7 @@ const listTestemonial = dataTestemonial.map(dataTestemonial =>
                 <img src={dataTestemonial.img} alt="avatar" />
             </div>
             <div className='avatar_info'>
-                <p className='avatar_info_name'>{dataTestemonial.name}</p>
+                <h3 className='avatar_info_name'>{dataTestemonial.name}</h3>
                 <p className='avatar_info_status'>{dataTestemonial.status}</p>
             </div>
         </div>

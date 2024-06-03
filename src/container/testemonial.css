@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+h3{
+    font-size: 0.9rem;
+}
+
 img{
     border-radius: 50%;
     height: 30px;
