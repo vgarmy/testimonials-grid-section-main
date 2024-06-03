@@ -50,9 +50,12 @@ img{
 }
 
 .item1{
-    background-color: var(--Moderate-violet);
+    
     grid-area: item1;
-    color: var(--Light-gray)
+    color: var(--Light-gray);
+    background: url("./../images/bg-pattern-quotation.svg") top right 100px no-repeat;
+    background-size: 100px;
+    background-color: var(--Moderate-violet);
 }
 
 .item1 .avatar_info_name,
@@ -107,6 +110,11 @@ img{
           "item4"
           "item5";
         grid-template-columns: 1fr;
+      }
+      .item1{
+        background: url("./../images/bg-pattern-quotation.svg") top right 20px no-repeat;
+        background-size: 120px;
+        background-color: var(--Moderate-violet);
       }
 
 }
