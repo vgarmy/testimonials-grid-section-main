@@ -1,11 +1,97 @@
+.grid_container {
+    inline-size: clamp(22rem, 87vw, 80rem);
+    display: grid;
+    grid-template-areas:
+      "item1 item1 item2 item5"
+      "item1 item1 item2 item5"
+      "item3 item4 item4 item5"
+      "item3 item4 item4 item5";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
 .box{
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+    height: 30px;
+    border: 1px solid var(--Light-gray);
+}
+
+.avatar_info_name{
+    font-weight: 500;
+}
+
+.avatar_info_status{
+    font-size: 0.7rem;
+}
+
+.lead_text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.testemonial_text{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
 }
 
 .item1{
     background-color: var(--Moderate-violet);
+    grid-area: item1;
+    color: var(--Light-gray)
 }
+
+.item1 .avatar_info_name,
+.item2 .avatar_info_name{
+    color: var(--White);
+}
+
+.item1 .lead_text,
+.item2 .lead_text{
+    color: var(--White);
+}
+
+.item2{
+    background-color: var(--Very-dark-grayish-blue);
+    grid-area: item2;
+    color: var(--Light-gray)
+}
+
+.item3{
+    background-color: var(--White);
+    grid-area: item3;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.item4{
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: item4;
+    color: var(--White);
+}
+
+.item5{
+    background-color: var(--White);
+    grid-area: item5;
+    color: var(--Very-dark-grayish-blue);
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .parent {
@@ -13,13 +99,13 @@
         height: fit-content;
       }
     .grid_container {
-        /* grid-template-areas: ; */
+        inline-size: "100%";
         grid-template-areas:
-          "item1 item1 item1 item1"
-          "item2 item2 item2 item2"
-          "item3 item3 item3 item3"
-          "item4 item4 item4 item4"
-          "item5 item5 item5 item5";
+          "item1"
+          "item2"
+          "item3"
+          "item4"
+          "item5";
         grid-template-columns: 1fr;
       }
 

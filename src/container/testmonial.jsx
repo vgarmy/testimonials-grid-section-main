@@ -4,14 +4,14 @@ import dataTestemonial from './dataTestemonial'
 
 const listTestemonial = dataTestemonial.map(dataTestemonial =>
 
-    <div className='item box' key={dataTestemonial.name}>
+    <div className={'item' + dataTestemonial.box + ' box'} key={dataTestemonial.box}>
         <div className='avatar'>
             <div className='avatar_img'>
                 <img src={dataTestemonial.img} alt="avatar" />
             </div>
             <div className='avatar_info'>
-                <p>{dataTestemonial.name}</p>
-                <p>{dataTestemonial.status}</p>
+                <p className='avatar_info_name'>{dataTestemonial.name}</p>
+                <p className='avatar_info_status'>{dataTestemonial.status}</p>
             </div>
         </div>
         <div className='lead_text'>
@@ -27,8 +27,10 @@ const listTestemonial = dataTestemonial.map(dataTestemonial =>
 
 const testmonial = () => {
     return (
-        <div className="box_customer">
-            {listTestemonial}
+        <div className="parent">
+            <div class="grid_container">
+                {listTestemonial}
+            </div>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import Testmonial from './container/testmonial';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" role="main">
       <Testmonial />
     </div>
   );
