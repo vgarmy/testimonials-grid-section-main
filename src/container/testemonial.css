@@ -15,7 +15,8 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1rem;  
+    box-shadow: 0px 7px 63px -21px rgba(0,0,0,0.75);
 }
 
 .avatar{
@@ -91,8 +92,6 @@ img{
     grid-area: item5;
     color: var(--Very-dark-grayish-blue);
 }
-
-
 
 
 
